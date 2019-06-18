@@ -1,0 +1,20 @@
+function doubleIt (a, callback) {
+  if (!a) {
+  	return callback(true)
+  }
+  console.log(callback(false, a*2));
+}
+
+doubleIt(1, function(err, result){
+	if (err) {
+  	return console.log("Error: Please supply a number");
+  }
+  return result;
+}); // 2
+
+doubleIt("", function(err, result){
+	if (err) {
+  	return console.log("Error: Please supply a number");
+  }
+  return result;
+}); // Error: Please supply a number
