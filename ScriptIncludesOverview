@@ -1,0 +1,29 @@
+var test = Class.create();
+test.prototype = {
+    initialize: function() {
+    },
+
+    type: 'test'
+};
+
+new test()
+----------------------------------
+
+- Class is an empty object {}
+- Class.create() returns a function object
+
+    function () {
+        this.initialize.apply(this, arguments);
+    }
+    
+
+Therefore, test = Class.create() is the same as 
+
+test = function () {
+        this.initialize.apply(this, arguments);
+       }
+typeof test // function
+
+when you create a an object from <test> using the 'new' keyword, it would call the test() constructor function which calls apply() on the  
+initialize function. It uses Apply becuase it passed "this" from test object to the function.
+    
