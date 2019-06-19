@@ -1,0 +1,9 @@
+var gr = ({
+	init:function() {
+  	this.name = "GlideRecord"
+    return this;   
+  },
+  type:"similar to Gr"
+}).init();
+
+console.log(gr)
