@@ -1,0 +1,8 @@
+var getCounter = function () {
+  var counter = 0;
+  return function () { return counter+=1}
+}
+
+count = getCounter();
+count() // 1
+count() // 2
