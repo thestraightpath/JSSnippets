@@ -1,8 +1,10 @@
-var gr = ({
-	init:function() {
-  	this.name = "GlideRecord"
-    return this;   
-  },
+// Immediate Object Initialisation
+({
+	init:function() { // invoked immediately		
+		grr.query();
+ 		this.type = "GlideRecord"
+		return this;  
+	},
   type:"similar to Gr"
 }).init();
 
