@@ -1,0 +1,17 @@
+// A module should be IIFE
+// Has private and priveleged members
+// A module should return an object
+
+MyUtility = (function () {
+  // private properties
+  var pProp = "pike",
+      pMeth = function () {
+       return pProp;
+      };
+      
+  // Public API
+  return {
+		use: function () { return pMeth()}
+  }
+})();
+console.log(MyUtility.use());
