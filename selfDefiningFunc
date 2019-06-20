@@ -1,0 +1,13 @@
+//Self defining function. Useful if the function needs to do some work initialy but does not need to repeat it
+
+useIt = function selfDefining () {
+	// Initial work
+	console.log("Function used for the first time");
+  useIt = function () {
+    // No longer need to repeat the initial work
+  	console.log("Function already used once");
+  };
+}
+
+useIt();
+useIt();
