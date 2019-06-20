@@ -4,7 +4,6 @@ funtion myFunc () {
       sum = a + b,
       myObj = {},
       i,
-      j;
-      
+      j; 
       // function body
 }
