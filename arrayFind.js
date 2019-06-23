@@ -8,13 +8,12 @@ var englishConfig = {
     "lang": "DE"
   }
 
-
 var greetings = [
   ["EN", "Hello"],
-  ["ES", "Hola"],
+  ["ES", "Holla"],
   ["DE", "Hallo"]
 ]
 
-console.log(greetings.find(function(element) {
+greetings.find(function (element) {
   return this.lang == element[0] //'this' is englishConfig object
-}, englishConfig)[1]); // 'Hello'
+}, englishConfig); // ["EN", "Hello"]
